@@ -1,0 +1,86 @@
+hr{
+    width: 100%;
+    height: 4px;
+    background: #F1F1F1;
+    border: none; /* Видаліть стандартну рамку, якщо вона є */
+    margin: 40px 0; /* Відступи від тексту */
+}
+.name-20-700{
+    font-style: 20px;
+    font-weight: 700;
+    font-family: Poppins;
+    padding: 10px 0;
+}
+.name-16-500{
+    font-style: 16px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+.button-a{
+    display: inline-block;
+    /* width: 100%;
+    max-width: 180px;
+    height: 100%;
+    max-height: 40px;  */
+    width: 180px;
+    height: 40px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.button{
+    width: 100%;
+    height: 100%;
+    background: #45A9DD;
+    display: flex; /* Додаємо flex для вирівнювання тексту по центру */
+    align-items: center; /* Вирівнюємо текст по вертикалі */
+    justify-content: center; /* Вирівнюємо текст по горизонталі */
+}
+.button p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+}
+.main-title-1{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 40px 0;
+}
+.button-form{
+    width: 180px;
+    height: 40px;
+    background: #45A9DD;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+.fixed-button {
+    position: fixed;
+    bottom: 20px; /* Відстань від нижнього краю */
+    right: 20px; /* Відстань від правого краю */
+}
+.fixed-button__contart-don{
+    background: #F1F1F1;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fixed-button__img{
+    width: 100%;
+    max-width: 40px;
+}

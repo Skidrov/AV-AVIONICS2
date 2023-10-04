@@ -1,0 +1,1011 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body{
+    font-family: "Poppins";
+    font-weight: 400;
+    color: #000;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .wrapper{
+      overflow: hidden;
+        min-height: 100%;
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper > main{
+        flex-grow: 1;
+    }
+/* ========================== */
+    [class*="__container"]{
+        max-width: 1450px;
+        margin: 0 auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+/* ========================== */
+    header{
+        /* position:fixed; */
+        position:static;
+        top:0;
+        left: 0;
+        /* padding: 20px 0; */
+        z-index: 100;
+        width: 100%;
+        margin-bottom: 60px;
+      }
+      .header__container{
+          display: flex;
+          align-items: center;
+          gap: 60px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          justify-content: space-between;
+      }
+      .line{
+            border-bottom: 1px solid black;
+        }
+        /* .header__flex{
+            display: flex;
+            font-size: 40px;
+            justify-content: space-between;
+        } */
+    .header__logo{
+        display: flex;
+        align-items: center;
+    }
+      .header__logo img{
+        height: 100%;
+        max-height: 48px;
+
+        /* display: flex; */
+      }
+      .header__buttons{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+      .header-buttons-darkmode{
+        width: 100%;
+        max-width: 40px;
+        height: 100%;
+        max-height: 40px;
+      }
+      .header-buttons-darkmode img{
+        width: 100%;
+      }
+      .header-buttons-language{
+        width: 100%;
+        max-width: 40px;
+        height: 100%;
+        max-height: 50px;
+      }
+      .header-buttons-language img{
+        width: 100%;
+      }
+      .header__menu{
+        flex-grow: 1;
+      }
+/* ========================== */
+.main-block{
+    margin-bottom: 40px;
+}
+.preview{
+    /* max-width: 1400px;
+    max-height: 740px;
+    width: 1400px;
+    height: 740px; */
+}
+.preview__logo-map{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    /* background-image: url(../img/map.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+}
+.logo-map__map{
+    width: 100%; /* Змініть на 50% або інше значення відсотків, якщо потрібно */
+    max-width: 100%; /* Задайте максимальну ширину, якщо потрібно */
+    height: auto; /* Автоматична висота, щоб зберегти пропорції */
+}
+.logo-map__logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 81%; /* Змініть на інше значення відсотків, якщо потрібно */
+    max-width: 100%; /* Задайте максимальну ширину, якщо потрібно */
+    height: auto; /* Автоматична висота, щоб зберегти пропорції */
+}
+.preview__little-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-items: flex-end;
+          /* padding-top: 20px;
+          padding-bottom: 20px; */
+    justify-content: space-between;
+}
+.little-info__1bock{
+    width: 100%;
+    max-width: 780px;
+    height: 100%;
+    max-height: 60px;
+    
+
+    /* max-width: 780px;
+    max-height: 60px;
+    width: 780px;
+    height: 60px; */
+    /* width: 90%; 
+    height: 10%; */
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.little-info__1bock p{
+    color: white;
+    font-size: 40px;
+    /* font-size: 4vw; */
+    color: #FFF;
+    font-family: Poppins;
+    font-weight: 500;
+    padding: 0;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.little-info__2bock{
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 40px;
+
+
+    /* max-width: 600px;
+    max-height: 40px;
+    width: 600px;
+    height: 40px; */
+    background-color: #45A9DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-shrink: 0; */
+    /* gap: 20px; */
+}
+.little-info__2bock p{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 0;
+    font-family: Poppins;
+}
+.preview__little-info p{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+/* ========================== */
+.body-main__banner{
+    /* max-width: 1400px;
+    max-height: 740px; */
+    
+}
+.banner__content{
+    /* max-width: 100%; */
+    /* background-image: url(../img/map.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex; /* Включаємо flexbox для центрування логотипу */
+    /* justify-content: center; /* Горизонтальне центрування логотипу */
+    /* align-items: center;  */
+    /* Вертикальне центрування логотипу */
+    /* position: relative;  */
+}
+/* .media-mane__map{
+    max-width: 100%;
+    background-image: url(../img/map.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.body-main__media{
+    flex: 0 1 50%;
+    max-width: 1000px;
+    max-height: 300px;
+}
+.media-mane__bannerlogo{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.body-main__logo{
+    max-width: 100%;
+} */
+
+
+
+/* #darkmode {
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+    border-radius: 5em;
+    background: var(--main-color);
+    
+} */
+/* #language{
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+    border-radius: 5em;
+    background: var(--main-color);
+    
+} */
+/* ========================== */
+.short-products{
+
+}
+.short-products__box{
+
+}
+.short-products__title{
+    max-width: 100%;
+    max-height: 60px;
+    margin: 40px 0;
+}
+.carts-shop{ 
+    width: 100%;
+    height: auto; 
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+    /* border: 1px solid #ccc; */
+    /* text-align: center; */
+    /* padding: 10px; */
+    /* margin: 10px auto; */
+}
+.carts-shop__flex{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px; */
+}
+.item-shop{
+ 
+}
+.item-shop__img{
+    width: 100%;
+}
+.block-img__frame{
+    max-width: 240px;
+    max-height: 240px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.block-img__picture{
+    width: 100%; 
+    max-width: 240px;
+    height: auto;
+}
+.picture-shop__cart-n{
+    width: 100%;
+    height: auto;
+}
+.info-small{
+    width: 100%;
+    max-width: 240px;
+    height: 100%;
+    max-height: 80px;
+    padding: 10px;
+}
+.info-small__mane-name{
+    height: 100%;
+    max-height: 40px;
+}
+.short-products__button-box{
+    text-align: center;
+    margin: 40px 0;
+}
+/* .short-products__button{
+    width: ;
+    max-width: ;
+    height: ;
+    max-height: ;
+} */
+.services-block{
+
+}
+.services-main{
+    margin: ;
+}
+.box-maintenance{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+    row-gap: 40px;
+}
+.maintenance-item{
+    display: flex;
+    width: 100%;
+    max-width: 440px;
+    height: 140px;
+    max-height: 100%;
+    background-color: #f1f1f1;  
+}
+.square-maintenance{
+    width: 140px;
+    max-width: 100%;
+    height: 140px;
+    max-height: 100%;
+    background: #45A9DD;
+    display: flex; /* Додайте display: flex; */
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center; /* Центрування по вертикалі */
+}
+.square-maintenance img{
+    max-width: 100%; /* Зробити зображення адаптивним */
+    max-height: 100%; /* Зробити зображення адаптивним */
+}
+.text-maintenance{
+    flex: 1;
+    padding: 20px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+.text-maintenance p{
+    padding: 2% 0;
+    /* line-height: 0.5%; */
+}
+.text-maintenance p:first-child{
+    color: #45A9DD;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+.text-maintenance p:last-child{
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.text-block p {
+    /* margin: 0;
+    font-size: 16px; */
+    /* Додайте інші стилі за вашим вибором */
+  }
+  /* @media screen and (max-width: 768px) {
+    .adaptive-block {
+      flex-direction: column;  Переносимо елементи вертикально на малих екранах 
+      height: auto;  Автоматична висота для пристосування до вмісту 
+    }
+  
+    .square {
+      width: 100%;
+      height: auto;  Автоматична висота для адаптивності 
+    }
+  
+    .text-block {
+      padding: 10px;
+    }
+  } */
+/* ========================== */
+.content-blog{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+.blog-item{
+    width: 100%;
+    max-width: 1400px;
+    /* height: 100%;
+    max-height: 200px; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    row-gap: 40px;
+    gap: 40px;
+}
+.blog-item__img-frame{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 200px;
+    background: #F1F1F1;
+    display: flex; /* Додайте display: flex; */
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center; /* Центрування по вертикалі */
+}
+.blog-item__img img{
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 200px;
+}
+.text-blog{
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 20px; */
+}
+
+.text-blog__info p{
+    padding-bottom: 20px;
+}
+.text-blog__info p:first-child{
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+.text-blog__info p:last-child{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.text-blog__info-second{
+    display: flex;
+    justify-content: space-between;
+}
+.text-blog__info-second p:first-child{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.text-blog__info-second p:last-child{
+    color: #45A9DD;
+    
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.blog-block__button-box{
+    text-align: center;
+    margin: 40px 0;
+}
+/* ========================== */
+.reviews-bock__container{
+    margin-bottom: 80px;
+}
+.reviews-bock__title{
+    margin-bottom: 80px;
+    }
+.contents-reviews{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* row-gap: 40px; */
+    position: relative;
+}
+.contents-reviews__background-1{
+    display: flex;
+    justify-content: space-between;
+}
+.contents-reviews__background{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 50px;
+    height: calc(100% + 80px); /* Висота блоку з урахуванням відступів */
+    background-color: #45A9DD;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px; /* Відступ зверху на 40px */
+    bottom: -40px; /* Відступ знизу на 40px */
+    z-index: -1;
+}
+.reviews-item__box{
+    padding: 30px;
+}
+.reviews-item{
+    width: 100%;
+    max-width: 420px;
+    height: 100%;
+    max-height: 300px;
+    display: flex;
+    background: #F1F1F1;
+    flex-direction: column;
+    row-gap: 40px;
+    gap: 70px;
+}
+.reviews-item div:not(:last-child){
+    padding-bottom: 36px;
+}
+.reviews-item__stars{
+
+}
+.reviews-item__text{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.reviews-item__frame{
+    width: 100%;
+    max-width: 40px;
+    height: 100%;
+    max-height: 40px;
+    background: #45A9DD;
+}
+.reviews-item__frame img{
+    width: 100%;
+}
+.reviews-item__buyer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.reviews-item__buyer p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* ========================== */
+.team-margin{
+    margin-bottom: 80px;
+}
+.items-team{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+    /* row-gap: 40px; */
+    position: relative;
+}
+.items-team__boxes{
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    /* background: #F1F1F1; */
+}
+.items-team__frame-img{
+    background: #F1F1F1;
+    width: 100%;
+    max-width: 240px;
+    height: 100%;
+    max-height: 240px;
+}
+.items-team__frame-img img{
+    width: 100%;
+    max-width: 100%;
+}
+.items-team__worker{
+    height: 40px;
+    background: #45A9DD;
+    text-align: center; /* Вирівнювання тексту по центру горизонталі */
+    display: flex; /* Додаємо display: flex; */
+    justify-content: center; /* Вирівнювання по центру горизонталі */
+    align-items: center; /* Вирівнювання по центру вертикалі */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFF;
+}
+/* .team-leader{
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+}
+.team-leader:not(){
+    padding-top: 40px;
+}
+.team-leader__frame-img{
+    background: #F1F1F1;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    
+}
+.team-leader__frame-img img{
+
+}
+.team-leader__main-worker{
+
+} */
+
+/* ========================== */
+.contact-info{
+    margin-bottom: 60px;
+}
+.main-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 100px 0 100px;
+    gap: 40px;
+}
+.contact-padding:not(:last-child){
+    padding-bottom: 20px;
+}
+.main-contact__title{
+    color: #000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+
+}
+.contact-details{
+    width: 100%;
+}
+.contact-details__box{
+    width: 100%;
+    max-width: 530px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-email{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.contact-details__phone{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.contact-email__info-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-email__info-title img{
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+}
+.contact-email__info-title p{
+    color: #45A9DD;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+.contact-email__info-mane{
+
+}
+.contact-email__info-mane p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.contact-details__maps{
+    width: 100%;
+    max-width: 530px;
+    height: 100%;
+    max-height: 400px;
+}
+.contact-details__maps iframe{
+    /* width: 100%;
+    max-width: 530px;
+    height: 100%;
+    max-height: 400px; */
+}
+.contact-form{
+    width: 100%;
+    max-width: 500px;
+    /* height: 100%;
+    max-height: 530px; */
+    height: auto;
+    background: #F1F1F1;
+    padding: 40px;
+}
+.contact-form__form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form__row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.form-padding:not(:last-child){
+    padding-bottom: 20px;
+}
+.contact-form__group {
+    flex-direction: column;
+}
+.contact-form__group label{
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.contact-form__group input{
+    width: 100%;
+    padding: 10px;
+}
+.contact-form__group textarea{
+    width: 100%;
+    padding: 10px;
+}
+/* ========================== */
+.footer{
+    background-color: #45A9DD;
+    margin-bottom: 20px;
+}
+.footer-main{
+    /* padding: 20px 0; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between; /* Розташування елементів по обох боках */
+    align-items: center; /* Вирівнювання по вертикалі по центру */
+}
+.footer-text{
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer-social{
+    display: flex;
+}
+.footer-social__link{
+    list-style: none; /* Прибирання маркерів списку */
+    padding: 0;
+    display: flex; /* Розташування елементів по горизонталі */
+}
+.footer-social__link{
+    margin-right: 40px;
+}
+/* ===========2page=============== */
+.product-margin{
+    margin-bottom: 100px;
+}
+.main-navigation{
+    margin: 0 0 40px 0;
+}
+.main-navigation__block{
+    display: flex;
+    gap: 5px;
+}
+.main-navigation__block li{
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ========================== */
+
+.card-info{
+    display: flex;
+    margin-bottom: 40px;
+}
+.card-info__img{
+    width: 53.57%; /* Ліва колонка */
+    /* float: left;  */
+}
+.card-info__img-mane{
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    max-height: 600px;
+}
+.card-info__img-mane img{
+    width: 100%;
+}
+.text-card{
+    width: 46.43%; /* Права колонка */
+    /* float: left;  */
+    padding: 90px 70px 90px 70px;
+    display: flex;
+    flex-direction: column ;
+}
+.text-card__title{
+    margin-bottom: 40px;
+}
+.text-card__title p:first-child{
+    color: #000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.text-card__title p:last-child{
+    color: #45A9DD;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.text-card__price-order{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+.text-card__price{
+    color: #000;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.text-card__paragraph{
+    
+    margin-bottom: 40px;
+}
+.text-card__paragraph p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.rating-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.rating-card__info{
+    display: flex;
+    gap: 20px;
+}
+.rating-card__info img{
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+}
+.rating-card__text{
+    display: flex;
+    flex-direction: column;
+}
+.rating-card__text p:first-child{
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.rating-card__text p:last-child{
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.detailed{
+    background: #F1F1F1;
+    margin-bottom: 40px;
+}
+.detailed-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.detailed-main__img{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 300px;
+}
+.detailed-main__img img{
+    width: 100%;
+}
+.detailed__main-text{
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 40px 0 40px 100px;
+}
+.detailed__main-text p:first-child{
+    padding-bottom: 20px;
+}
+.booking-main{
+    margin-bottom: 100px;
+}
+.booking-main-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.booking-form{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 710px;
+    background: #F1F1F1;
+    padding: 40px;
+}
+.booking-contact__line{
+    width: 100%;
+    height: 4px;
+    background: #F1F1F1;
+}
+.booking-contact__title p{
+    color: #45A9DD;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 60px;
+}
+.booking-contact__info p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 60px;
+}
+.carts-shop-big{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* border: 1px solid #ccc; */
+    /* text-align: center; */
+    /* padding: 10px; */
+    /* margin: 10px auto; */
+}
